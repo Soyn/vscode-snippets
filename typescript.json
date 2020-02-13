@@ -1,0 +1,28 @@
+{
+	"Console Log": {
+		"prefix": "cl",
+		"body": [
+			"console.log('$1', '$2');",
+		]
+	},
+	"Console Assert": {
+		"prefix": "ca",
+		"body": [
+			"console.assert($1 === $2);"
+		]
+	},
+	"Import React": {
+		"prefix": "ir",
+		"body": [
+			"import react from 'React';",
+			"$1"
+		]
+	},
+	"Import Connect": {
+		"prefix": "ic",
+		"body": [
+			"import {connect} from 'react-redux';",
+			"$1"
+		]
+	}
+}
