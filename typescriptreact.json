@@ -2,7 +2,7 @@
 	"Console Log": {
 		"prefix": "cl",
 		"body": [
-			"console.log('$1', '$2');",
+			"console.log('$1', $2);",
 		]
 	},
 	"Console Assert": {
@@ -14,7 +14,7 @@
 	"Import React": {
 		"prefix": "ir",
 		"body": [
-			"import react from 'React';",
+			"import React from 'react';",
 			"$1"
 		]
 	},
@@ -27,6 +27,14 @@
 	},
 	"New React Component": {
 		"prefix": "nrc",
-		"body": ["class $1 extends React.Component$2", "{\n render() {}\n}"],
+		"body": ["class $1 extends React.Component$2 {", "render() {}\n}"],
+	},
+	"React Class Name": {
+		"prefix": "cn",
+		"body": ["className=\"$1\" "]
+	},
+	"Import immutability-helper" : {
+		"prefix": "iu",
+		"body": ["import update from 'immutability-helper';"],
 	}
 }
